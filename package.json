@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "homepage": "https://joserraul.github.io/CentroAcopio/"
   },
   "dependencies": {
     "clsx": "^2.1.1",
