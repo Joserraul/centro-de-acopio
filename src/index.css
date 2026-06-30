@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #030712;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 15%, rgba(249, 115, 22, 0.08), transparent 20%),
+    #030712;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.32);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.82);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 2px solid rgba(15, 23, 42, 0.82);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.7), rgba(217, 70, 239, 0.7));
+}
+
+.font-display {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.range-cyan::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgba(8, 15, 40, 0.85);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #67e8f9, #22d3ee);
+  box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.12);
+}
+
+.range-cyan::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgba(8, 15, 40, 0.85);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #67e8f9, #22d3ee);
+  box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.12);
+}
